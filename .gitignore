@@ -3,3 +3,4 @@ llm-env
 node_modules
 *.env
 *.json
+*.drawio
