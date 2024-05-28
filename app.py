@@ -56,8 +56,6 @@ session_id = st.session_state.id
 client = None
 
 # setting up the llm
-from dotenv import load_dotenv
-load_dotenv()
 llm = Gemini(model_name="models/gemini-pro", api_key=os.environ['GOOGLE_API_KEY'])
 
 # helper func
