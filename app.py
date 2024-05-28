@@ -1,8 +1,7 @@
 
 import os
 
-os.environ["HF_HOME"] = "/workspaces/chat-any/weights"
-os.environ["TORCH_HOME"] = "/workspaces/chat-any/weights"
+# os.environ["HF_HOME"] = "/workspaces/chat-any/weights"
 
 import gc
 import re # website url validation
@@ -12,15 +11,14 @@ nest_asyncio.apply()
 
 import streamlit as st
 from torch import cuda
-# from dotenv import load_dotenv
-# load_dotenv() # Load Gemini API
+from dotenv import load_dotenv
+load_dotenv() # Load Gemini API
 
 
 from llama_index.core import Settings
 from llama_index.core import PromptTemplate
 from llama_index.core import SummaryIndex
 from llama_index.readers.web import SimpleWebPageReader
-from IPython.display import Markdown, display
 from llama_index.core import VectorStoreIndex
 from llama_index.embeddings.langchain import LangchainEmbedding
 from langchain_community.embeddings import HuggingFaceBgeEmbeddings
@@ -29,8 +27,6 @@ from llama_index.llms.gemini import Gemini
 
 
 # ---------- Init + Helper function ----------------
-
-# os.environ['HF_HOME'] = '\lit-chat_with_code_RAG\weights' # for run embedding model locally
 
 # setting up the embedding model
 def load_embedding_model(
