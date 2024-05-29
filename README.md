@@ -45,9 +45,6 @@ The process begins by user inputing website URL. After that, a website is crawle
     ```python
     streamlit run app.py
     ```
-- In case you find any difficulty running this app from code, feel free to visit my deployed version at https://chat-any.streamlit.app/.
-    
-    However, due to Streamlit's limited deployment resources, my web app may slow down or even not work. In that case, feel free to contact me via duclam0903@gmail.com.
 
 # Demo
 
