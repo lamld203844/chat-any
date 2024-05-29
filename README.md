@@ -51,7 +51,7 @@ The process begins by user inputing website URL. After that, a website is crawle
 
 # Demo
 
-<iframe width="541" height="240" src="https://www.youtube.com/embed/8gFe_jw_onQ" title="Chat with website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Alt text](https://img.youtube.com/vi/8gFe_jw_onQ/0.jpg)](https://www.youtube.com/watch?v=8gFe_jw_onQ)
 
 ## Limit
 
