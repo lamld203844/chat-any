@@ -45,12 +45,15 @@ The process begins by user inputing website URL. After that, a website is crawle
     ```python
     streamlit run app.py
     ```
+- In case you find any difficulty running this app from code, feel free to visit my deployed version at https://chat-any.streamlit.app/.
     
+    However, due to Streamlit's limited deployment resources, my web app may slow down or even not work. In that case, feel free to contact me via duclam0903@gmail.com.
 
 # Demo
 
-9. demonstrate at least how-to-installation, and highlight all possible usages of your application.
+<iframe width="541" height="240" src="https://www.youtube.com/embed/8gFe_jw_onQ" title="Chat with website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Limits
+## Limit
 
 - Can only handle **english** language (Because I use [Huggingface: BAAI/bge-small-en](https://huggingface.co/BAAI/bge-small-en) as embedding model)
+- I don’t focus on optimizing inference, so creating embeddings or other processes may take a while 🐢. Please take a deep breath and be patient, my friend! 🙏
