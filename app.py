@@ -11,8 +11,8 @@ nest_asyncio.apply()
 
 import streamlit as st
 from torch import cuda
-from dotenv import load_dotenv
-load_dotenv() # Load Gemini API
+# from dotenv import load_dotenv
+# load_dotenv() # Load Gemini API
 
 
 from llama_index.core import Settings
@@ -56,7 +56,7 @@ session_id = st.session_state.id
 client = None
 
 # setting up the llm
-llm = Gemini(model_name="models/gemini-pro", api_key=os.environ['GOOGLE_API_KEY'])
+llm = Gemini(model_name="models/gemini-pro", api_key=st.secrets["GOOGLE_API_KEY"])
 
 # helper func
 def reset_chat():
